@@ -3,27 +3,80 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parla con Alessandro Online</title>
+<title>Alessandro</title>
 <meta name="description" content="Pratica l'italiano con Alessandro: conversazione, grammatica, role-play e giochi.">
 <meta property="og:title" content="Parla con Alessandro Online 😊">
 <meta property="og:description" content="Pratica l'italiano con Alessandro: conversazione, grammatica, role-play e giochi.">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>😊</text></svg>">
+<meta name="theme-color" content="#3b82f6">
+<meta name="apple-mobile-web-app-title" content="Alessandro">
+<link rel="apple-touch-icon" href="icona-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icona-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<noscript><meta http-equiv="refresh" content="0; url=https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/"></noscript>
 <style>
-  :root { --sfondo: #f8fafc; --testo: #0f172a; --blu: #2563eb; }
-  @media (prefers-color-scheme: dark) { :root { --sfondo: #0f172a; --testo: #e2e8f0; --blu: #60a5fa; } }
+  :root { --sfondo: #f8fafc; --testo: #0f172a; --blu: #2563eb; --carta: #ffffff; --bordo: #e2e8f0; --tenue: #475569; }
+  @media (prefers-color-scheme: dark) {
+    :root { --sfondo: #0f172a; --testo: #e2e8f0; --blu: #60a5fa; --carta: #1e293b; --bordo: #334155; --tenue: #94a3b8; }
+  }
   body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
-         background: var(--sfondo); color: var(--testo); font-family: system-ui, sans-serif; text-align: center; padding: 16px; }
+         background: var(--sfondo); color: var(--testo); font-family: system-ui, sans-serif; text-align: center; padding: 16px;
+         box-sizing: border-box; }
   a { color: var(--blu); font-size: 1.2rem; font-weight: 600; }
+  #installa { display: none; max-width: 460px; text-align: left; }
+  #installa h1 { font-size: 1.35rem; margin: 12px 0 2px 0; text-align: center; }
+  #installa .en { color: var(--tenue); font-size: 0.92rem; font-style: italic; }
+  #installa img { display: block; width: 96px; height: 96px; border-radius: 22px; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+  .scheda { background: var(--carta); border: 2px solid var(--bordo); border-radius: 18px; padding: 12px 16px; margin: 14px 0; }
+  .scheda h2 { font-size: 1.1rem; margin: 0 0 6px 0; }
+  .scheda ol { margin: 0; padding-left: 22px; line-height: 1.55; }
+  .apri { display: block; text-align: center; background: #2563eb; color: #ffffff; border-radius: 999px; padding: 12px 16px;
+          text-decoration: none; margin-top: 6px; }
 </style>
-<script>location.replace("https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/");</script>
+<script>
+  var APP = "https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/";
+  var INSTALLA = /[?&]installa\b/.test(location.search);
+  if (INSTALLA) {
+    // l'indirizzo torna quello corto: è quello che il telefono salva sulla schermata Home (e che apre l'app)
+    try { history.replaceState(null, "", location.pathname); } catch (e) {}
+  } else {
+    location.replace(APP);
+  }
+</script>
 </head>
 <body>
-<div>
+<div id="apro">
   <p style="font-size: 3rem; margin: 0">😊</p>
   <p>Sto aprendo <b>Parla con Alessandro Online</b>…</p>
   <p><a href="https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/">Se non si apre, tocca qui</a></p>
 </div>
+<div id="installa">
+  <img src="icona-192.png" alt="">
+  <h1>📲 Metti «Alessandro» sulla schermata Home</h1>
+  <p class="en" style="text-align:center;margin:0">Add “Alessandro” to your Home screen: it opens like an app.</p>
+  <div class="scheda">
+    <h2>🍎 iPhone (Safari)</h2>
+    <ol>
+      <li>Tocca <b>Condividi</b>, il quadrato con la freccia in su. <span class="en">(Tap Share.)</span></li>
+      <li>Tocca <b>«Aggiungi alla schermata Home»</b>. <span class="en">(Tap “Add to Home Screen”.)</span></li>
+      <li>Tocca <b>«Aggiungi»</b>. <span class="en">(Tap “Add”.)</span></li>
+    </ol>
+  </div>
+  <div class="scheda">
+    <h2>🤖 Android (Chrome)</h2>
+    <ol>
+      <li>Tocca i <b>tre puntini ⋮</b> in alto a destra. <span class="en">(Tap the three dots.)</span></li>
+      <li>Tocca <b>«Aggiungi a schermata Home»</b>. <span class="en">(Tap “Add to Home screen”.)</span></li>
+      <li>Tocca <b>«Aggiungi»</b>. <span class="en">(Tap “Add”.)</span></li>
+    </ol>
+  </div>
+  <a class="apri" href="https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/">▶️ Fatto! Apri l'app <span style="font-weight:400">(Done! Open the app)</span></a>
+</div>
+<script>
+  if (INSTALLA) {
+    document.getElementById("apro").style.display = "none";
+    document.getElementById("installa").style.display = "block";
+  }
+</script>
 </body>
 </html>
