@@ -25,11 +25,12 @@
   a { color: var(--blu); font-size: 1.2rem; font-weight: 600; }
   #installa { display: none; max-width: 460px; text-align: left; }
   #installa h1 { font-size: 1.35rem; margin: 12px 0 2px 0; text-align: center; }
-  #installa .en { color: var(--tenue); font-size: 0.92rem; font-style: italic; }
+  #installa .en { display: block; color: var(--tenue); font-size: 1rem; font-style: italic; margin-top: 2px; }
   #installa img { display: block; width: 96px; height: 96px; border-radius: 22px; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,.18); }
   .scheda { background: var(--carta); border: 2px solid var(--bordo); border-radius: 18px; padding: 12px 16px; margin: 14px 0; }
   .scheda h2 { font-size: 1.1rem; margin: 0 0 6px 0; }
-  .scheda ol { margin: 0; padding-left: 22px; line-height: 1.55; }
+  .scheda ol { margin: 0; padding-left: 22px; line-height: 1.5; }
+  .scheda li { margin-bottom: 10px; }
   .apri { display: block; text-align: center; background: #2563eb; color: #ffffff; border-radius: 999px; padding: 12px 16px;
           text-decoration: none; margin-top: 6px; }
 </style>
@@ -53,21 +54,27 @@
 <div id="installa">
   <img src="icona-192.png" alt="">
   <h1>📲 Metti «Alessandro» sulla schermata Home</h1>
-  <p class="en" style="text-align:center;margin:0">Add “Alessandro” to your Home screen: it opens like an app.</p>
+  <p class="en" style="text-align:center;margin:0">Add “Alessandro” to your Home screen: it opens with one tap, like any other app.</p>
   <div class="scheda">
     <h2>🍎 iPhone (Safari)</h2>
     <ol>
-      <li>Tocca <b>Condividi</b>, il quadrato con la freccia in su. <span class="en">(Tap Share.)</span></li>
-      <li>Tocca <b>«Aggiungi alla schermata Home»</b>. <span class="en">(Tap “Add to Home Screen”.)</span></li>
-      <li>Tocca <b>«Aggiungi»</b>. <span class="en">(Tap “Add”.)</span></li>
+      <li>Tocca <b>Condividi</b>: il quadrato con la freccia che va in su.
+          <span class="en">Tap <b>Share</b>: the square with the arrow pointing up.</span></li>
+      <li>Scorri in basso e tocca <b>«Aggiungi alla schermata Home»</b>.
+          <span class="en">Scroll down and tap <b>“Add to Home Screen”</b>.</span></li>
+      <li>In alto a destra tocca <b>«Aggiungi»</b>: l'icona è pronta.
+          <span class="en">Tap <b>“Add”</b> at the top right: the icon is ready.</span></li>
     </ol>
   </div>
   <div class="scheda">
     <h2>🤖 Android (Chrome)</h2>
     <ol>
-      <li>Tocca i <b>tre puntini ⋮</b> in alto a destra. <span class="en">(Tap the three dots.)</span></li>
-      <li>Tocca <b>«Aggiungi a schermata Home»</b>. <span class="en">(Tap “Add to Home screen”.)</span></li>
-      <li>Tocca <b>«Aggiungi»</b>. <span class="en">(Tap “Add”.)</span></li>
+      <li>Tocca i <b>tre puntini ⋮</b> in alto a destra.
+          <span class="en">Tap the <b>three dots ⋮</b> at the top right.</span></li>
+      <li>Tocca <b>«Aggiungi a schermata Home»</b>.
+          <span class="en">Tap <b>“Add to Home screen”</b>.</span></li>
+      <li>Tocca <b>«Aggiungi»</b>: l'icona è pronta.
+          <span class="en">Tap <b>“Add”</b>: the icon is ready.</span></li>
     </ol>
   </div>
   <a class="apri" href="https://tutor-italiano-eorswoacmi3bddzgluxvqe.streamlit.app/">▶️ Fatto! Apri l'app <span style="font-weight:400">(Done! Open the app)</span></a>
